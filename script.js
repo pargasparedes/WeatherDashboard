@@ -23,6 +23,7 @@ fetch(queryURL)
 
     // Printing data to current climate
     $(".cityName").text(data.name);
+    $(".currentDate").text(new Date((data.dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }));
     $(".currentHumidityV").text(Math.round(data.main.humidity) + "%");
     $(".currentWindV").text(Math.round(data.wind.speed) + "mph");
 
@@ -45,31 +46,31 @@ fetch(queryURL)
     $(".currentUVV").text(Math.round(data.current.uvi))
 
     // Printing data to forecast day 1
-    $(".1date").text(data.daily[1].dt)
+    $(".1date").text(new Date((data.daily[1].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[1].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }));
     $(".1temperature").text(Math.round(data.daily[1].temp.day));
     $(".1windV").text(Math.round(data.daily[1].wind_speed) + "mph");
     $(".1humidityV").text(Math.round(data.daily[1].humidity) + "%");
 
     // Printing data to forecast day 2
-    $(".2date").text(data.daily[2].dt)
+    $(".2date").text(new Date((data.daily[2].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[2].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".2temperature").text(Math.round(data.daily[2].temp.day));
     $(".2windV").text(Math.round(data.daily[2].wind_speed) + "mph");
     $(".2humidityV").text(Math.round(data.daily[2].humidity) + "%");
 
     // Printing data to forecast day 3
-    $(".3date").text(data.daily[3].dt)
+    $(".3date").text(new Date((data.daily[3].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[3].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".3temperature").text(Math.round(data.daily[3].temp.day));
     $(".3windV").text(Math.round(data.daily[3].wind_speed) + "mph");
     $(".3humidityV").text(Math.round(data.daily[3].humidity) + "%");
 
     // Printing data to forecast day 4
-    $(".4date").text(data.daily[4].dt)
+    $(".4date").text(new Date((data.daily[4].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[4].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".4temperature").text(Math.round(data.daily[4].temp.day));
     $(".4windV").text(Math.round(data.daily[4].wind_speed) + "mph");
     $(".4humidityV").text(Math.round(data.daily[4].humidity) + "%");
 
     // Printing data to forecast day 5
-    $(".5date").text(data.daily[5].dt)
+    $(".5date").text(new Date((data.daily[5].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[5].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".5temperature").text(Math.round(data.daily[5].temp.day));
     $(".5windV").text(Math.round(data.daily[5].wind_speed) + "mph");
     $(".5humidityV").text(Math.round(data.daily[5].humidity) + "%");
