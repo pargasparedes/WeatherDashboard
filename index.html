@@ -1,10 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
+
   <body>
-    <h1>Hello World</h1>
+
+    <div class="main">
+
+      <div class="citySearch">
+
+      </div>
+
+      <div class="currentWeatherContainer row">
+
+        <div class="currentInfoContainer col">
+          
+         <div class="currentCard">
+
+          <h1 class="cityName row">City</h1>
+          <h2 class="currentDate row">Date</h2>
+
+          <div class="parametersCard row">
+            <div class="currentParameters col" style="padding: 0">
+              <h3 class="currentHumidity">Humidity:</h3>
+              <h3 class="currentWind">Wind Speed:</h3>
+              <h3 class="currentUV">UV Index:</h3>
+            </div>
+
+            <div class="currentValues col" style="padding: 0">
+              <h3 class="currentHumidityV">100</h3>
+              <h3 class="currentWindV">50mph</h3>
+              <h3 class="currentUVV">35suns</h3>
+            </div>
+          </div>
+
+         </div>
+
+        </div>
+
+        <div class="currentTemperatureContainer col">
+
+          <div class="currentTemperatureCard">
+            <h1 class="currentTemperature">97</h1>
+            <h5 class="currentMinMax">89/100</h5>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="forecastWeatherDivision">
+        
+        <div class="forecastWeatherContainer">
+
+          <div class="forecastWeatherCard row">
+
+            <div class="1Day col">
+
+              <p class="row 1date">Date</p>
+              <p class="row 1temperature">Temperature and Icon</p>
+              <div class="row">
+                <div class="col" style="padding: 0">
+                  <p class="1wind">Wind Speed:</p>
+                  <p class="1humidity">Humidity:</p>
+                </div>
+                <div class="col" style="padding: 0">
+                  <p class="1windV">50mph</p>
+                  <p class="1humidityV">80%</p>
+                </div>
+              </div>
+            
+            </div>
+
+            <div class="2Day col">
+
+              <p class="row 2date">Date</p>
+              <p class="row 2temperature">Temperature and Icon</p>
+              <div class="row">
+                <div class="col" style="padding: 0">
+                  <p class="2wind">Wind Speed:</p>
+                  <p class="2humidity">Humidity:</p>
+                </div>
+                <div class="col" style="padding: 0">
+                  <p class="2windV">50mph</p>
+                  <p class="2humidityV">80%</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="3Day col">
+              
+              <p class="row 3date">Date</p>
+              <p class="row 3temperature">Temperature and Icon</p>
+              <div class="row">
+                <div class="col" style="padding: 0">
+                  <p class="3wind">Wind Speed:</p>
+                  <p class="3humidity">Humidity:</p>
+                </div>
+                <div class="col" style="padding: 0">
+                  <p class="3windV">50mph</p>
+                  <p class="3humidityV">80%</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="4Day col">
+              
+              <p class="row 4date">Date</p>
+              <p class="row 4temperature">Temperature and Icon</p>
+              <div class="row">
+                <div class="col" style="padding: 0">
+                  <p class="4wind">Wind Speed:</p>
+                  <p class="4humidity">Humidity:</p>
+                </div>
+                <div class="col" style="padding: 0">
+                  <p class="4windV">50mph</p>
+                  <p class="4humidityV">80%</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="5Day col">
+              
+              <p class="row 5date">Date</p>
+              <p class="row 5temperature">Temperature and Icon</p>
+              <div class="row">
+                <div class="col" style="padding: 0">
+                  <p class="5wind">Wind Speed:</p>
+                  <p class="5humidity">Humidity:</p>
+                </div>
+                <div class="col" style="padding: 0">
+                  <p class="5windV">50mph</p>
+                  <p class="5humidityV">80%</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+<h1>Hello World</h1>
+
+<form>
+  <label for="fname">Name of the city:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" id="submit" value="Submit">
+</form>
+</div>
+
+
+
+
+
+
+     
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="1Day col">
+
+  <h2 class="1Date row">Date</h2>
+
+  <div class="1parametersCard row">
+    <div class="1Parameters col" style="padding: 0">
+      <h3 class="1Humidity">Humidity:</h3>
+      <h3 class="1Wind">Wind Speed:</h3>
+      <h3 class="1UV">UV Index:</h3>
+    </div>
+
+    <div class="1Values col" style="padding: 0">
+      <h3 class="1ParametersV">100</h3>
+      <h3 class="1WindV">50mph</h3>
+      <h3 class="1UVV">35suns</h3>
+    </div>
+
+</div>
+
+<div class="2Day col">
+
+  <h2 class="2Date row">Date</h2>
+
+  <div class="2parametersCard row">
+    <div class="2Parameters col" style="padding: 0">
+      <h3 class="2Humidity">Humidity:</h3>
+      <h3 class="2Wind">Wind Speed:</h3>
+      <h3 class="2UV">UV Index:</h3>
+    </div>
+
+    <div class="2Values col" style="padding: 0">
+      <h3 class="2ParametersV">100</h3>
+      <h3 class="2WindV">50mph</h3>
+      <h3 class="2UVV">35suns</h3>
+    </div>
+
+</div> -->

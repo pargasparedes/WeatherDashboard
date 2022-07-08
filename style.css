@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url('./Images/willian-justen-de-vasconcellos-T_Qe4QlMIvQ-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+}
+
+.citySearch {
+    border: 3px solid blue;
+    display: none;
+}
+
+.currentWeatherContainer {
+    height: 60vh;
+}
+
+.currentTemperatureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentInfoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentCard {
+    /* border: 3px solid blueviolet; */
+    width: 40vh;
+}
+
+/* .parametersCard {
+   border: 3px solid red;
+} */
+
+
+.forecastWeatherDivision {
+    /* border: 3px solid firebrick; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+.currentTemperature {
+    font-size: 150px;
+}
+
+.currentMinMax {
+    text-align: center;
+}
+
+.forecastWeatherContainer {
+    height: 30vh;
+    width: 150vh;
+}
