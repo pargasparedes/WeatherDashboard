@@ -48,30 +48,40 @@ fetch(queryURL)
     // Printing data to forecast day 1
     $(".1date").text(new Date((data.daily[1].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[1].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }));
     $(".1temperature").text(Math.round(data.daily[1].temp.day));
+    document.querySelector(".Oneicon").src =
+      "https://openweathermap.org/img/wn/" + data.daily[1].weather[0].icon + ".png";
     $(".1windV").text(Math.round(data.daily[1].wind_speed) + "mph");
     $(".1humidityV").text(Math.round(data.daily[1].humidity) + "%");
 
     // Printing data to forecast day 2
     $(".2date").text(new Date((data.daily[2].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[2].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".2temperature").text(Math.round(data.daily[2].temp.day));
+    document.querySelector(".Twoicon").src =
+      "https://openweathermap.org/img/wn/" + data.daily[2].weather[0].icon + ".png";
     $(".2windV").text(Math.round(data.daily[2].wind_speed) + "mph");
     $(".2humidityV").text(Math.round(data.daily[2].humidity) + "%");
 
     // Printing data to forecast day 3
     $(".3date").text(new Date((data.daily[3].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[3].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".3temperature").text(Math.round(data.daily[3].temp.day));
+    document.querySelector(".Threeicon").src =
+      "https://openweathermap.org/img/wn/" + data.daily[3].weather[0].icon + ".png";
     $(".3windV").text(Math.round(data.daily[3].wind_speed) + "mph");
     $(".3humidityV").text(Math.round(data.daily[3].humidity) + "%");
 
     // Printing data to forecast day 4
     $(".4date").text(new Date((data.daily[4].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[4].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".4temperature").text(Math.round(data.daily[4].temp.day));
+    document.querySelector(".Fouricon").src =
+      "https://openweathermap.org/img/wn/" + data.daily[4].weather[0].icon + ".png";
     $(".4windV").text(Math.round(data.daily[4].wind_speed) + "mph");
     $(".4humidityV").text(Math.round(data.daily[4].humidity) + "%");
 
     // Printing data to forecast day 5
     $(".5date").text(new Date((data.daily[5].dt) * 1000).toLocaleDateString('en-US', { weekday: "long" }) + ", " + new Date((data.daily[5].dt) * 1000).toLocaleDateString('en-US', { day: "numeric" }))
     $(".5temperature").text(Math.round(data.daily[5].temp.day));
+    document.querySelector(".Fiveicon").src =
+      "https://openweathermap.org/img/wn/" + data.daily[5].weather[0].icon + ".png";
     $(".5windV").text(Math.round(data.daily[5].wind_speed) + "mph");
     $(".5humidityV").text(Math.round(data.daily[5].humidity) + "%");
 
