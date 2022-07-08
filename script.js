@@ -5,7 +5,7 @@ var city;
 $("#submit").click(function(event){
     city = $("#fname").val();
     console.log(city);
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=imperial";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=imperial";
 
 fetch(queryURL)
 .then(function (response) {
