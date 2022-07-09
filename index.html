@@ -11,11 +11,7 @@
 
   <body>
 
-    <div class="main">
-
-      <div class="citySearch">
-
-      </div>
+    <div class="main" id="main">
 
       <div class="currentWeatherContainer row">
 
@@ -177,23 +173,33 @@
 
       </div>
 
-<h1>Hello World</h1>
+    </div>
 
-<form>
-  <label for="fname">Name of the city:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <input type="submit" id="submit" value="Submit">
-</form>
-</div>
+    <div class="search">
+
+      <div class="citySearchContainer" id="citySearchContainer">
+
+        
+
+        <div class="search-wrapper">
+          <div class="input-holder">
+              <input type="text" class="search-input" placeholder="Enter a City" />
+              <button class="search-icon"><span></span></button>
+          </div>
+          <span class="close"></span>
+      </div>
 
 
 
+        <!-- <form>
+          <label for="fname">City:</label>
+          <input type="text" id="fname" name="fname">
+          <input type="submit" id="submit" value="Submit">
+        </form> -->
 
+      </div>
 
-
-     
-
-   
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
@@ -204,49 +210,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-<!-- <div class="1Day col">
-
-  <h2 class="1Date row">Date</h2>
-
-  <div class="1parametersCard row">
-    <div class="1Parameters col" style="padding: 0">
-      <h3 class="1Humidity">Humidity:</h3>
-      <h3 class="1Wind">Wind Speed:</h3>
-      <h3 class="1UV">UV Index:</h3>
-    </div>
-
-    <div class="1Values col" style="padding: 0">
-      <h3 class="1ParametersV">100</h3>
-      <h3 class="1WindV">50mph</h3>
-      <h3 class="1UVV">35suns</h3>
-    </div>
-
-</div>
-
-<div class="2Day col">
-
-  <h2 class="2Date row">Date</h2>
-
-  <div class="2parametersCard row">
-    <div class="2Parameters col" style="padding: 0">
-      <h3 class="2Humidity">Humidity:</h3>
-      <h3 class="2Wind">Wind Speed:</h3>
-      <h3 class="2UV">UV Index:</h3>
-    </div>
-
-    <div class="2Values col" style="padding: 0">
-      <h3 class="2ParametersV">100</h3>
-      <h3 class="2WindV">50mph</h3>
-      <h3 class="2UVV">35suns</h3>
-    </div>
-
-</div> -->
