@@ -26,7 +26,7 @@
             <div class="currentParameters col" style="padding: 0">
               <h3 class="currentHumidity">Humidity:</h3>
               <h3 class="currentWind">Wind Speed:</h3>
-              <h3 class="currentUV">UV Index:</h3>
+              <h3 class="currentUV" id="uv">UV Index:</h3>
             </div>
 
             <div class="currentValues col" style="padding: 0">
@@ -44,7 +44,12 @@
 
           <div class="currentTemperatureCard">
             <h1 class="currentTemperature">97</h1>
-            <h5 class="currentMinMax">89/100</h5>
+            <div class="row">
+              <h5 class="col currentMinMax">89/100</h5>
+              <div class="col" style="padding: 0">
+                <img src="" class="icon currIcon" style="padding: 0"; />
+              </div>
+            </div>
           </div>
           
         </div>
@@ -57,11 +62,11 @@
 
           <div class="forecastWeatherCard row">
 
-            <div class="1Day col">
+            <div class="unoDay col foreCard" style="margin-right: 5px;">
 
-              <p class="row 1date">Date</p>
+              <p class="row 1date date">Date</p>
               <div class="row">
-                <p class="col 1temperature" style="padding: 0">Temp</p>
+                <p class="col 1temperature temp" style="padding: 0">Temp</p>
                 <div class="col" style="padding: 0">
                   <img src="" class="icon Oneicon" style="padding: 0"; />
                 </div>
@@ -79,11 +84,11 @@
             
             </div>
 
-            <div class="2Day col">
+            <div class="dosDay col foreCard" style="margin-right: 5px;">
 
-              <p class="row 2date">Date</p>
+              <p class="row 2date date">Date</p>
               <div class="row">
-                <p class="col 2temperature" style="padding: 0">Temp</p>
+                <p class="col 2temperature temp" style="padding: 0">Temp</p>
                 <div class="col" style="padding: 0">
                   <img src="" class="icon Twoicon" style="padding: 0"; />
                 </div>
@@ -101,11 +106,11 @@
               
             </div>
 
-            <div class="3Day col">
+            <div class="tresDay col foreCard" style="margin-right: 5px;">
               
-              <p class="row 3date">Date</p>
+              <p class="row 3date date">Date</p>
               <div class="row">
-                <p class="col 3temperature" style="padding: 0">Temp</p>
+                <p class="col 3temperature temp" style="padding: 0">Temp</p>
                 <div class="col" style="padding: 0">
                   <img src="" class="icon Threeicon" style="padding: 0"; />
                 </div>
@@ -123,11 +128,11 @@
 
             </div>
 
-            <div class="4Day col">
+            <div class="cuatroDay col foreCard" style="margin-right: 5px;">
               
-              <p class="row 4date">Date</p>
+              <p class="row 4date date">Date</p>
               <div class="row">
-                <p class="col 4temperature" style="padding: 0">Temp</p>
+                <p class="col 4temperature temp" style="padding: 0">Temp</p>
                 <div class="col" style="padding: 0">
                   <img src="" class="icon Fouricon" style="padding: 0"; />
                 </div>
@@ -145,11 +150,11 @@
 
             </div>
 
-            <div class="5Day col">
+            <div class="cincoDay col foreCard">
               
-              <p class="row 5date">Date</p>
+              <p class="row 5date date">Date</p>
               <div class="row">
-                <p class="col 5temperature" style="padding: 0">Temp</p>
+                <p class="col 5temperature temp" style="padding: 0">Temp</p>
                 <div class="col" style="padding: 0">
                   <img src="" class="icon Fiveicon" style="padding: 0"; />
                 </div>
@@ -187,15 +192,13 @@
               <button class="search-icon"><span></span></button>
           </div>
           <span class="close"></span>
-      </div>
+        </div>
+          <div class="history" id="history">
+            <div class="row justify-content-between srch">
+             
+            </div>
+          </div>
 
-
-
-        <!-- <form>
-          <label for="fname">City:</label>
-          <input type="text" id="fname" name="fname">
-          <input type="submit" id="submit" value="Submit">
-        </form> -->
 
       </div>
 

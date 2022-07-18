@@ -77,17 +77,46 @@ h1 {
     display: visible;
 }
 
+.foreCard {
+    background-color: rgba(133, 146, 158, 30%);
+    border-radius: 20px;
+}
 
+.row {
+    justify-content: center;
+}
 
+.col {
+    text-align: center;
+    max-width: 100px;
+}
 
+.cityName {
+    font-size: 80px;
+}
 
+.low {
+    background-color: rgba(84, 175, 36, 30%);
+    border-radius: 20px;
+}
 
+.medium {
+    background-color: rgba(236, 83, 21, 50%);
+    border-radius: 20px;
+}
 
+.high {
+    background-color: rgba(252, 4, 4, 50%);
+    border-radius: 20px;
+}
 
+.date {
+    font-size: 22px;
+}
 
-
-
-
+.temp {
+    font-size: 20px;
+}
 
 
 
@@ -232,4 +261,23 @@ h1 {
      height: 5px;
      left: 0px;
      top: 10px;
+ }
+
+ .history {
+    width: 50vh;
+    display: flex;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:58%;
+    left:50%;
+    visibility: hidden;
+ }
+
+ .history .row p {
+    background-color: #d6eaff;
+    opacity: 0.5;
+    padding-left: 3px;
+    border-radius: 10px;
+    text-align: center;
  }
