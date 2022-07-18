@@ -266,7 +266,7 @@ h1 {
  .history {
     width: 50vh;
     display: flex;
-    display: inline-block;
+    display: inline;
     position: absolute;
     transform: translate(-50%, -50%);
     top:58%;

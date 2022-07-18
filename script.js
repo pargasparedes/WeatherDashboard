@@ -149,7 +149,7 @@ function view_city(){
     var ciudad = JSON.parse(localStorage.getItem("data"));
     for (let i = 0; i < ciudad.length; i++){
       if (i < 4){
-        $(".srch").append("<p>" + ciudad[i] + "</p>");
+        $(".srch").append("<p>" + ciudad[i] + "</p>").find("p").addClass("col");
       }
     }
   }
