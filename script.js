@@ -5,16 +5,21 @@ var arrHistory = [];
 view_city();
 
 $(".search-icon").click(function(event){
+  city = $(".search-input").val();
+  everything(event);
+});
+
+  function everything(event){
 
   if($(".search-wrapper").hasClass("active") && $(".search-input").val() != ""){
+    callShow(event);
+  }};
+
+  function callShow(event) {
     document.getElementById("main").style.display = 'block';
     document.getElementById("citySearchContainer").style.display = 'none';
-    city = $(".search-input").val();
-    save();
     
-    count += 1;
-    localStorage.setItem("count", count);
-    console.log(city);
+    save();
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=imperial";
 
 fetch(queryURL)
@@ -23,13 +28,8 @@ fetch(queryURL)
   })
 .then(function(data) {
 
-    console.log(data)
-
     let long = data.coord.lon;
     let lati = data.coord.lat;
-
-    console.log(long);
-    console.log(lati);
 
     // Printing data to current climate
     $(".cityName").text(data.name);
@@ -52,7 +52,6 @@ fetch(queryURL)
     return response.json();
   })
 .then(function(data) {
-    console.log(data);
 
     // Printing data to current climate
     $(".currentUVV").text(Math.round(data.current.uvi))
@@ -110,8 +109,8 @@ fetch(queryURL)
   });
 
   event.preventDefault();
-}
-});
+  }
+
 
 
 
@@ -149,7 +148,11 @@ function view_city(){
     var ciudad = JSON.parse(localStorage.getItem("data"));
     for (let i = 0; i < ciudad.length; i++){
       if (i < 4){
-        $(".srch").append("<p>" + ciudad[i] + "</p>").find("p").addClass("col");
+        $('.srch').append($('<p>' + ciudad[i] + '</p>').addClass('col srchItem' + i));
+        $(".srchItem" + i).click(function(event){
+          city = ciudad[i];
+          callShow(event);
+        });
       }
     }
   }

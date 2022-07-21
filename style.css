@@ -264,7 +264,7 @@ h1 {
  }
 
  .history {
-    width: 50vh;
+    width: 60vh;
     display: flex;
     display: inline;
     position: absolute;
@@ -274,10 +274,14 @@ h1 {
     visibility: hidden;
  }
 
- .history .row p {
-    background-color: #d6eaff;
-    opacity: 0.5;
+ .srch p {
+    background-color: rgba(14, 204, 204, 25%);
+    color: #d6eaff;
     padding-left: 3px;
     border-radius: 10px;
     text-align: center;
+ }
+
+ .srch p:hover {
+    color: #cc6600;
  }
